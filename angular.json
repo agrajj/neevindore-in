@@ -83,6 +83,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "deployUrl": "/",
+            "servePath": "/"
+          },
           "configurations": {
             "production": {
               "browserTarget": "neevindore-in:build:production"
