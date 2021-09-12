@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/neevindore-in",
+    "public": "dist/html",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
