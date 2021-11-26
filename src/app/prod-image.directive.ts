@@ -13,3 +13,15 @@ export class ProdImageDirective {
       : path;
   }
 }
+@Directive({
+  selector: '[appProdLink]',
+})
+export class ProdLinkDirective {
+  constructor(el: ElementRef) {
+    const href = el.nativeElement.href;
+
+    el.nativeElement.href = environment.production
+      ? `${environment.cdn}/${href}`
+      : href;
+  }
+}
