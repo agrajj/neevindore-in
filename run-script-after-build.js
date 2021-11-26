@@ -31,14 +31,29 @@ fs.readFile(indexFilePath, "utf8", function (err, data) {
 
   $(`link[rel=stylesheet]`).each((i, el) => {
     const el_href = $(el).attr("href");
-    if (el_href && el_href.trim().length > 1)
-      $(el).attr(`href`, `${jsDeliverBase}/${el_href}`);
+    if (el_href && el_href.trim().length > 1) {
+      const hasOut = $(el).attr("out");
+
+      if (typeof hasOut !== "undefined" && hasOut !== false) {
+        $(el).attr(`href`, `${jsDeliverBase}/assets/${el_href}`);
+        $(el).removeAttr("out");
+      } else {
+        $(el).attr(`href`, `${jsDeliverBase}/${el_href}`);
+      }
+    }
   });
 
   $(`script`).each((i, el) => {
     const el_src = $(el).attr("src");
-    if (el_src && el_src.trim().length > 1)
-      $(el).attr(`src`, `${jsDeliverBase}/${el_src}`);
+    if (el_src && el_src.trim().length > 1) {
+      const hasOut = $(el).attr("out");
+      if (typeof hasOut !== "undefined" && hasOut !== false) {
+        $(el).attr(`src`, `${jsDeliverBase}/assets/${el_src}`);
+        $(el).removeAttr("out");
+      } else {
+        $(el).attr(`src`, `${jsDeliverBase}/${el_src}`);
+      }
+    }
   });
 
   // now write that file back
