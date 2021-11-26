@@ -18,9 +18,9 @@ export class ProdImageDirective {
 })
 export class ProdLinkDirective {
   constructor(el: ElementRef) {
-    const href = el.nativeElement.href;
+    const href = el.nativeElement.title;
 
-    el.nativeElement.href = environment.production
+    el.nativeElement.href = !environment.production
       ? `${environment.cdn}/${href}`
       : href;
   }
