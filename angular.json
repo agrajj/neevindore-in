@@ -23,12 +23,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "deployUrl": "assets/",
             "outputPath": "dist/assets",
-            "index": {
-              "input": "src/index.html",
-              "output": "../html/index.html"
-            },
+            "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -50,6 +46,11 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "assets/",
+              "index": {
+                "input": "src/index.html",
+                "output": "../html/index.html"
+              },
               "budgets": [
                 {
                   "type": "initial",
@@ -84,7 +85,6 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "deployUrl": "/",
             "servePath": "/"
           },
           "configurations": {
