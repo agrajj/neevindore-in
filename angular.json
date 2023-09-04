@@ -46,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "assets/",
+              "baseHref": "/",
               "index": {
                 "input": "src/index.html",
                 "output": "../html/index.html"
