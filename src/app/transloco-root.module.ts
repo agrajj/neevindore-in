@@ -7,7 +7,7 @@ import {
   translocoConfig,
   TranslocoModule,
 } from '@ngneat/transloco';
-import { Injectable, isDevMode, NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { environment } from '../environments/environment';
 
 @Injectable({ providedIn: 'root' })
@@ -15,7 +15,7 @@ export class TranslocoHttpLoader implements TranslocoLoader {
   constructor(private http: HttpClient) {}
 
   getTranslation(lang: string) {
-    const path = isDevMode()
+    const path = !environment.production
       ? `/i18n/${lang}.json`
       : `${environment.cdn}/i18n/${lang}.json`;
     return this.http.get<Translation>(path);
@@ -32,7 +32,7 @@ export class TranslocoHttpLoader implements TranslocoLoader {
         defaultLang: localStorage.getItem('language') || 'en',
         // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,
-        prodMode: !isDevMode(),
+        prodMode: environment.production,
       }),
     },
     { provide: TRANSLOCO_LOADER, useClass: TranslocoHttpLoader },
