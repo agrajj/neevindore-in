@@ -42,7 +42,7 @@ a:focus {
 }
 
 .tm-text-primary {
-  color: #3496d8;
+  color: #01624c;
 }
 
 .tm-font-big {
@@ -51,7 +51,7 @@ a:focus {
 
 .tm-btn-primary {
   color: white;
-  background-color: #3496d8;
+  background-color: #01624c;
   padding: 14px 35px;
   border-radius: 30px;
 }
@@ -59,7 +59,7 @@ a:focus {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #73c1f6;
+  background-color: #178b27;
 }
 
 /* Navbar */
@@ -85,7 +85,7 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #3496d8;
+  color: #01624c;
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -107,7 +107,7 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #3496d8;
+  color: #01624c;
 }
 
 .navbar-toggler {
@@ -214,7 +214,7 @@ a:focus {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: white;
-  background: #3496d8;
+  background: #01624c;
 }
 
 /* Introduction */
@@ -232,7 +232,7 @@ a:focus {
 .tm-icon {
   display: block;
   margin-bottom: 55px;
-  color: #3496d8;
+  color: #01624c;
 }
 
 /* Work */
@@ -264,7 +264,7 @@ a:focus {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #3ba0dd;
+  color: #01624c;
 }
 
 .slick-dots li button:before {
@@ -372,7 +372,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #3496d8;
+  background: #01624c;
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
@@ -454,7 +454,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
-  color: #3496d8;
+  color: #01624c;
 }
 
 .tm-input {
@@ -499,7 +499,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #3496d8;
+  color: #01624c;
   text-decoration: none;
 }
 

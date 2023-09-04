@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'neevindore-in';
+  selectedLanguage: string = localStorage.getItem('language') || 'en';
+
+  constructor(private translocoService: TranslocoService) {}
+
+  onChange(target: any) {
+    this.translocoService.setActiveLang(target.value);
+    localStorage.setItem('language', target.value);
+  }
 }
