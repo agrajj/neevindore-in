@@ -5,7 +5,9 @@ import { environment } from '../environments/environment';
 })
 export class ProdImageDirective {
   constructor(el: ElementRef) {
-    const path = el.nativeElement.src;
+    //storing original src as title.
+    const path = el.nativeElement.title;
+
     el.nativeElement.src = environment.production
       ? `${environment.cdn}/${path}`
       : path;
