@@ -37,7 +37,7 @@
               {
                 "glob": "favicon.ico",
                 "input": "src/",
-                "output": "./../html"
+                "output": "./../assets"
               },
               {
                 "glob": "**/*",

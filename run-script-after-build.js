@@ -23,6 +23,12 @@ fs.readFile(indexFilePath, "utf8", function (err, data) {
   // load html into cheerio so we can manipulate DOM
   const $ = cheerio.load(data);
 
+  $(`link[rel=icon]`).each((i, el) => {
+    const el_href = $(el).attr("href");
+    if (el_href && el_href.trim().length > 1)
+      $(el).attr(`href`, `${jsDeliverBase}/assets/${el_href}`);
+  });
+
   $(`link[rel=stylesheet]`).each((i, el) => {
     const el_href = $(el).attr("href");
     if (el_href && el_href.trim().length > 1)
