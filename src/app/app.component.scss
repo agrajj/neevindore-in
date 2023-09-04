@@ -1,6 +1,11 @@
 .logo {
-  width: 100%;
-  height: 100%;
+  img {
+    width: 40%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 .animate {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -10,16 +15,21 @@
   text-align: center;
   color: #159414;
   background-image: -webkit-linear-gradient(92deg, #159414, #feab3a);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
+  animation: hue 10s infinite linear;
 }
 
-@-webkit-keyframes hue {
+@keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
   }
   to {
     -webkit-filter: hue-rotate(-360deg);
+  }
+}
+@media only screen and (max-width: 480px) {
+  logo {
+    width: 100%;
   }
 }
