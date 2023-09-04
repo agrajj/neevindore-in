@@ -1,12 +1,13 @@
 {
   "name": "neevindore-in",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build && node run-script-after-build.js",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build && node release.js"
   },
   "private": true,
   "dependencies": {
