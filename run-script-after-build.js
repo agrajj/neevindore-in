@@ -8,7 +8,7 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const _ = require("lodash");
 const { version } = require("./package.json");
-const jsDeliverBase = `https://cdn.jsdelivr.net/agrajj/neevindore-in@${version}/dist`;
+const jsDeliverBase = `https://cdn.jsdelivr.net/gh/agrajj/neevindore-in@${version}/dist`;
 const indexFilePath = "dist/html/index.html";
 
 console.log("After build script started...");
