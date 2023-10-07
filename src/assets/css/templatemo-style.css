@@ -132,7 +132,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  /* background-image: url(../img/main2.jpeg); */
+  background-image: url(../img/main1.jpeg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
