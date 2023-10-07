@@ -8,6 +8,19 @@
   }
 }
 
+.language-selector {
+  background: transparent;
+  border: none;
+  color: #04521f;
+  outline: none;
+  padding: 0.5rem 0 0 0;
+
+  option {
+    background: #a299ae;
+    color: #fff;
+  }
+}
+
 .logo-image {
   width: 64px;
   position: fixed;
@@ -15,7 +28,7 @@
   left: 10px;
 }
 .animate {
-font-family: 'Montez', cursive;
+  font-family: "Montez", cursive;
   font-size: 7vw;
   font-weight: 1000;
   // font-weight: 200;
@@ -52,16 +65,15 @@ font-family: 'Montez', cursive;
   }
 }
 
-.tm-hero-subtitle{
-    // background: repeating-linear-gradient(45deg,
-    //       #606dbc,
-    //       #606dbc 5%,
-    //       #465298 5%,
-    //       #465298 10%);
-    //   background-size: 100px 100px;
-    //   animation: move-it 2s linear infinite;
+.tm-hero-subtitle {
+  // background: repeating-linear-gradient(45deg,
+  //       #606dbc,
+  //       #606dbc 5%,
+  //       #465298 5%,
+  //       #465298 10%);
+  //   background-size: 100px 100px;
+  //   animation: move-it 2s linear infinite;
 }
-
 
 // Social Media
 
@@ -86,7 +98,7 @@ $font-size: 25px;
 
   h1 {
     font: {
-      family: 'Roboto', sans-serif;
+      family: "Roboto", sans-serif;
       weight: 900;
       size: 30px;
     }
@@ -120,7 +132,7 @@ $font-size: 25px;
     color: $basic-light-color;
 
     font: {
-      family: 'Playfair Display', serif;
+      family: "Playfair Display", serif;
       weight: 400;
       size: 25px;
     }
@@ -132,7 +144,7 @@ $font-size: 25px;
     margin-top: 50px;
   }
 
-  &:nth-child(2n+1) {
+  &:nth-child(2n + 1) {
     // background-color: $basic-light-color;
 
     h2 {
@@ -147,7 +159,6 @@ $font-size: 25px;
   }
 
   a {
-
     &:last-child {
       margin-right: 0px;
     }
@@ -211,22 +222,16 @@ $font-size: 25px;
   }
 }
 
-
 /* jaques effect */
 .effect.jaques {
-
   a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    transition: border-top-left-radius 0.1s linear 0s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
+      border-bottom-left-radius 0.1s linear 0.3s;
 
     &:hover {
       border-radius: 50%;
     }
   }
 }
-
-
-
-
-
-
-
