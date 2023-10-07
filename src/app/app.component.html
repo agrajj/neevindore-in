@@ -1,7 +1,11 @@
 <router-outlet></router-outlet>
 
 <!-- Hero section -->
-<section id="hero" class="text-white tm-font-big tm-parallax">
+<section
+  id="hero"
+  class="text-white tm-font-big tm-parallax"
+  [style.background-image]="heroImages[heroImageIndex]"
+>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
     <div class="container">
@@ -65,16 +69,21 @@
 
   <div class="text-center tm-hero-text-container">
     <div class="tm-hero-text-container-inner">
-      <h2 class="tm-hero-title">NEEV</h2>
+      <h1 class="tm-hero-title">NEEV</h1>
       <p class="tm-hero-subtitle">
-        <small class="animate"> Nurture. Equality. Education. Vision </small>
+        <small class="animate d-flex justify-content-center">
+          <a href="">Nurture.</a>
+          <a href="">Equality.</a>
+          <a href="">Education.</a>
+          <a href="">Vision.</a>
+        </small>
       </p>
     </div>
   </div>
 
   <div class="tm-next tm-intro-next">
     <a href="#introduction" class="text-center tm-down-arrow-link">
-      <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+      <i class="fas fa-2x fa-caret-down tm-down-arrow"></i>
     </a>
   </div>
 </section>
@@ -537,32 +546,33 @@
           <div class="tm-underline-inner"></div>
         </div>
         <p class="mb-5">
-          Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
-          non tempus sem turpis vitae lorem. Maecenas eget odio in sapien
-          ultrices viverra vitae vel leo. Curabitur at elit eu risus pharetra
-          pellentesque at at velit.
+          18, Collage Colony, Patel Mohalla, Khajrana, Indore, Madhya Pradesh
+          452018
         </p>
       </div>
 
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-        <a href="tel:0100200340" class="tm-contact-item-link">
+        <a href="tel:+919302428089" class="tm-contact-item-link">
           <i class="fas fa-3x fa-phone mr-4"></i>
-          <span class="mb-0">010-020-0340</span>
+          <span class="mb-0">+91-9302428089</span>
         </a>
       </div>
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
         <a href="mailto:info@company.co" class="tm-contact-item-link">
           <i class="fas fa-3x fa-envelope mr-4"></i>
-          <span class="mb-0">info@company.co</span>
+          <span class="mb-0">info@neevindore.in</span>
         </a>
       </div>
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-        <a href="https://www.google.com/maps" class="tm-contact-item-link">
+        <a
+          href="https://www.google.com/maps/place/NEEV+(A+SOCIAL+WELFARE+SOCIETY+FOR+NURTURE+EQUALITY+EDUCATION+VISION+)/@22.7370806,75.9078772,15z/data=!4m6!3m5!1s0x3962e3b59b332323:0x2e5515b5f7773916!8m2!3d22.7370806!4d75.9078772!16s%2Fg%2F11stvt2d7r?hl=en-IN&entry=ttu"
+          class="tm-contact-item-link"
+        >
           <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
           <span class="mb-0">Location on Maps</span>
         </a>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+      <!-- <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
         <form action="" method="get">
           <input
             name="email"
@@ -573,6 +583,44 @@
           />
           <button type="submit" class="btn tm-btn-submit">Submit</button>
         </form>
+      </div> -->
+      <div class="col-12">
+        <div class="container-social">
+          <div class="effect jaques">
+            <div class="buttons">
+              <a
+                href="https://www.facebook.com/NEEV.Indore"
+                class="fb"
+                title="Join us on Facebook"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://twitter.com/NEEVINDORE"
+                class="tw"
+                title="Join us on Twitter"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCKH0Wh3qZqD0MPIRqm347rA"
+                class="g-plus"
+                title="Join us on Youtube"
+                ><i class="fa fa-youtube" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/neev_social_organization/"
+                class="insta"
+                title="Join us on Instagram"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/neev-%E0%A4%A8%E0%A5%80%E0%A4%82%E0%A4%B5/"
+                class="in"
+                title="Join us on Linked In"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
