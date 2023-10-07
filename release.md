@@ -6,10 +6,7 @@ Step 1:
 Make changes in the desired files and test everything locally first.
 
 Step 2:
-Once changes are done, upgrade the version in package.json.
-
-Step 3:
 run `npm run deploy` from the root of directory. -- this will commit and push the code in Github repo.
 
-Step 4:
+Step 3:
 Once code is pushed and Github's deploy action finishes, js deliver will propagate the new assets in the CDN and updated code is now available in neevindore.in
